@@ -9,7 +9,8 @@ const Navbar = (props) => {
     let setIsLoggedIn = props.setIsLoggedIn;
 
   return (
-    <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 gap-x-2 mx-auto'>
+    <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 gap-x-2 mx-auto
+    border-2 mt-2 px-2 rounded-xl bg-gradient-to-r from-gray-900 via-black to-gray-950 p-4 shadow-md'>
 
         <Link to="/"> 
             <img src={logo} alt="Logo" width={160} height={32} loading="lazy"/>
@@ -17,13 +18,13 @@ const Navbar = (props) => {
 
         <nav>
             <ul className='text-richblack-100 flex gap-x-6'>
-                <li>
+                <li className='transform hover:scale-110 transition duration-300 ease-in-out hover:text-orange-200'>
                     <Link to="/">Home</Link>
                 </li>
-                <li>
-                    <Link to="/">About</Link>
+                <li className='transform hover:scale-110 transition duration-300 ease-in-out hover:text-orange-200'>
+                    <Link to="/about">About</Link>
                 </li>
-                <li>
+                <li className='transform hover:scale-110 transition duration-300 ease-in-out hover:text-orange-200'>
                     <Link to="/Contact">Contact</Link>
                 </li>
             </ul>
@@ -76,9 +77,7 @@ const Navbar = (props) => {
                 </Link>
                 
             }
-            {
-                <Link to="/contact">Contact</Link>
-            }
+           
         </div>
       
     </div>

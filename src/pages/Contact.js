@@ -16,13 +16,12 @@ const Contact = () => {
 
   function submitHandler(e) {
     e.preventDefault();
-    console.log("Form Submitted: ", formData);
-    // You can later integrate EmailJS / backend API here
+    
     setFormData({ name: "", email: "", message: "" });
   }
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-richblack-900 px-4">
+    <div className="flex justify-center items-center min-h-screen bg-richblack-900 px-4 mb-5 mt-5">
       <div className="w-full max-w-lg bg-richblack-800 text-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-center mb-6">Contact Us</h1>
 
@@ -36,7 +35,8 @@ const Contact = () => {
               value={formData.name}
               onChange={changeHandler}
               required
-              className="w-full p-3 rounded-md bg-richblack-700 border-b-2 focus:border-blue-500 outline-none"
+              className="w-full p-3 rounded-md bg-richblack-700 border-b-2 focus:border-blue-500
+              outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Enter your name"
             />
           </div>
@@ -50,7 +50,8 @@ const Contact = () => {
               value={formData.email}
               onChange={changeHandler}
               required
-              className="w-full p-3 rounded-md bg-richblack-700 border-b-2 focus:border-blue-500 outline-none"
+              className="w-full p-3 rounded-md bg-richblack-700 border-b-2 focus:border-blue-500
+              outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Enter your email"
             />
           </div>
@@ -64,7 +65,8 @@ const Contact = () => {
               onChange={changeHandler}
               required
               rows="5"
-              className="w-full p-3 rounded-md bg-richblack-700 border-b-2 focus:border-blue-500 outline-none"
+              className="w-full p-3 rounded-md bg-richblack-700 border-b-2 focus:border-blue-500
+              outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Write your message..."
             />
           </div>
