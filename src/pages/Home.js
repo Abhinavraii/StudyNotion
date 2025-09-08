@@ -137,19 +137,19 @@ const Home = ({ }) => {
           <p className='font-bold text-richblack-200 text-base w-[85%] mt-4'>Our courses are designed and taught by industry experts who have years of experience
             in coding and are passionate about sharing their knowledge with you.</p>
 
-          <div className='flex flex-col sm:flex-row gap-4 justify-center items-start mt-14 '>
+          <div className='flex gap-2 mt-14  '>
              <Link to ="/contact">
-            <button className='flex  gap-2 items-center bg-yellow-400 font-bold text-lg rounded-md py-2 px-6 
-          border-b-2 border-r-2 border-richblack-200  
-          hover:border-transparent hover:scale-95 transition-all duration-200'>
+            <button className='flex items-center justify-center text-sm sm:text-lg font-bold
+             bg-richblack-700 rounded-md py-2 px-3 sm:px-4 bg-yellow-400 border-b-2 border-r-2 border-richblack-200 
+               hover:border-transparent hover:scale-95 transition-all duration-200'>
               Try it Yourself
               <FaArrowRight />
             </button>
             </Link>
              <Link to ="/contact">
-            <button className=' text-lg font-bold bg-richblack-700 rounded-md py-2 px-6
-           text-white border-b-2 border-r-2 border-richblack-200 
-           hover:border-transparent hover:scale-95 transition-all duration-200'>
+            <button className='flex items-center justify-center text-sm sm:text-lg font-bold
+             bg-richblack-700 rounded-md py-2 px-3 sm:px-4 text-white border-b-2 border-r-2 border-richblack-200 
+               hover:border-transparent hover:scale-95 transition-all duration-200'>
               Learn More
             </button >
             </Link>
@@ -226,17 +226,17 @@ const Home = ({ }) => {
           <p className='font-bold text-richblack-200 text-base w-[85%] mt-4'>Go ahead, give it a try. Our hands-on
             learning environment means you'll be writing real code from your very first lesson.</p>
 
-          <div className='flex gap-6 justify-start mt-14 '>
+          <div className='flex  gap-2 mt-14 flex-wrap '>
             
-            <button className='flex  gap-2 items-center bg-yellow-400 font-bold text-lg rounded-md py-2 px-4 
-          border-b-2 border-r-2 border-richblack-200  
-          hover:border-transparent hover:scale-95 transition-all duration-200'>
+            <button className='flex  gap-2 items-center justify-center bg-yellow-400 font-bold 
+            text-sm sm:text-lg rounded-md py-2 px-4  border-b-2 border-r-2 border-richblack-200  
+            hover:border-transparent hover:scale-95 transition-all duration-200'>
               Continue Lessions
               <FaArrowRight />
             </button>
-            <button className=' text-lg font-bold bg-richblack-700 rounded-md py-2 px-4
-           text-white border-b-2 border-r-2 border-richblack-200 
-           hover:border-transparent hover:scale-95 transition-all duration-200'>
+            <button className='flex items-center justify-center text-sm sm:text-lg font-bold
+             bg-richblack-700 rounded-md py-2 px-3 sm:px-4 text-white border-b-2 border-r-2 border-richblack-200 
+               hover:border-transparent hover:scale-95 transition-all duration-200'>
               Learn More
             </button >
           </div>
