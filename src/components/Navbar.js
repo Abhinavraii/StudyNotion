@@ -9,8 +9,8 @@ const Navbar = (props) => {
     let setIsLoggedIn = props.setIsLoggedIn;
 
   return (
-    <div className='flex justify-between items-center w-11/12 max-w-[1160px] py-4 gap-x-2 mx-auto
-    border-2 mt-2 px-2 rounded-xl bg-gradient-to-r from-gray-900 via-black to-gray-950 p-4 shadow-md'>
+    <div className='flex justify-between items-center w-full max-w-[1160px] py-4 gap-x-2 mx-auto
+     mt-2 px-2 rounded-xl bg-gradient-to-r from-gray-900 via-black to-gray-950 p-4 shadow-md'>
 
         <Link to="/"> 
             <img src={logo} alt="Logo" width={160} height={32} loading="lazy"/>

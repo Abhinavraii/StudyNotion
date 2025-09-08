@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import { FaArrowRight } from "react-icons/fa";
-import bannerVideo from "../assets/banner.mp4";
+
 import { Link } from 'react-router-dom';
 import { HomePageExplore } from "../data/HomePageExplore";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -116,7 +116,7 @@ const Home = ({ }) => {
 
         <div className='mt-16 ml-5 mr-8 relative shadow-[10px_-5px_50px_-5px] shadow-blue-400'>
           <video
-            src={bannerVideo}
+            src="/banner.mp4"
             autoPlay
             loop
             muted
@@ -137,7 +137,7 @@ const Home = ({ }) => {
           <p className='font-bold text-richblack-200 text-base w-[85%] mt-4'>Our courses are designed and taught by industry experts who have years of experience
             in coding and are passionate about sharing their knowledge with you.</p>
 
-          <div className='flex gap-6 justify-start mt-14 '>
+          <div className='flex flex-col sm:flex-row gap-4 justify-center items-start mt-14 '>
              <Link to ="/contact">
             <button className='flex  gap-2 items-center bg-yellow-400 font-bold text-lg rounded-md py-2 px-6 
           border-b-2 border-r-2 border-richblack-200  
@@ -255,14 +255,15 @@ const Home = ({ }) => {
         </div>
         {/* New way for me to create nav bar and buttons inside it..  Liked It */}
         <div className="mt-5 mb-5 ">
-          <nav className="flex flex-wrap justify-evenly bg-richblack-700 rounded-full w-[80%] mx-auto py-2 mt-4 gap-2">
+          <nav className="flex flex-wrap justify-center bg-richblack-700 rounded-full w-[90%] mx-auto py-2 mt-4 gap-2">
             {["Free", "New To Coding", "Most Popular", "Skills paths", "Career Paths"].map((item, i) => (
               <button
                 key={i}
                  onClick={() => setSelectedTag(item)} 
                 
-                className="rounded-full flex gap-2 bg-richblack-700 text-white items-center  px-4 py-2 
-               hover:bg-richblack-800 hover:scale-95 transition duration-300 ease-in-out font-semibold  focus:bg-richblack-900"
+                className="rounded-full flex gap-2 bg-richblack-700 text-white items-center  px-3 py-2 
+                text-sm sm:text-base hover:bg-richblack-800 hover:scale-95 transition 
+                duration-300 ease-in-out font-semibold  focus:bg-richblack-900"
               >
                 {item}
               </button>
